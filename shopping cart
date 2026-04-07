@@ -1,0 +1,18 @@
+items=[]
+prices=[]
+
+while True:
+    product = input('Enter product: ')
+
+    if product == 'stop':
+        break
+
+    cost = int(input('Enter cost: '))
+    
+    items.append(product)
+    prices.append(cost)
+
+total = 0
+for price in prices:
+        total = total + price
+print('Total:', total)
